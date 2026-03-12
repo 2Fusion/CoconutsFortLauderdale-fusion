@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coconuts Waterfront Restaurant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f7f7f7;
+color:#222;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:100;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10%;
+}
+
+nav h1{
+font-weight:600;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.45);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+.btn{
+background:#ff914d;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:50px;
+font-size:32px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-body{
+padding:20px;
+}
+
+.reviews{
+background:#0f172a;
+color:white;
+}
+
+.review{
+text-align:center;
+max-width:600px;
+margin:auto;
+}
+
+.instagram img{
+height:200px;
+object-fit:cover;
+width:100%;
+}
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:30px;
+}
+
+.sticky-buttons{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.sticky-buttons a{
+background:#ff914d;
+color:white;
+padding:12px 18px;
+border-radius:30px;
+text-decoration:none;
+font-size:14px;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:34px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>Coconuts</h1>
+
+<ul>
+<li><a href="#">Menu</a></li>
+<li><a href="#">Reservations</a></li>
+<li><a href="#">Dock & Dine</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+<h2>Waterfront Dining in Fort Lauderdale</h2>
+<p>Fresh seafood, sunset views, and dockside dining.</p>
+<a class="btn" href="#">View Menu</a>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Local Favorites</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1559847844-5315695dadae">
+<div class="card-body">
+<h3>Lobster Roll</h3>
+<p>Fresh Maine lobster with warm butter.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1553621042-f6e147245754">
+<div class="card-body">
+<h3>Coconut Shrimp</h3>
+<p>Golden fried shrimp with tropical sauce.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617196037308-51bdf0f8a646">
+<div class="card-body">
+<h3>Garlic Crab Claws</h3>
+<p>House favorite served with garlic butter.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section reviews">
+
+<h2>What Guests Say</h2>
+
+<div class="review">
+<p>⭐ ⭐ ⭐ ⭐ ⭐</p>
+<p>"Best waterfront seafood spot in Fort Lauderdale. Amazing food and sunset views."</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Dock & Dine</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto;">
+Arrive by boat and dock along the Intracoastal. Limited slips available first-come, first-served.
+</p>
+
+</section>
+
+<section class="section instagram">
+
+<h2>Follow Us on Instagram</h2>
+
+<div class="grid">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<img src="https://images.unsplash.com/photo-1529692236671-f1dc2a1d49c5">
+<img src="https://images.unsplash.com/photo-1559847844-5315695dadae">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Visit Us</h2>
+
+<iframe 
+src="https://maps.google.com/maps?q=fort%20lauderdale&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="350" style="border:0;">
+</iframe>
+
+</section>
+
+<footer>
+
+<p>© 2026 Coconuts Waterfront Restaurant</p>
+<p>429 Seabreeze Blvd, Fort Lauderdale</p>
+
+</footer>
+
+<div class="sticky-buttons">
+
+<a href="#">📞 Call</a>
+<a href="#">📍 Directions</a>
+<a href="#">🍽 Menu</a>
+
+</div>
+
+</body>
+</html>
